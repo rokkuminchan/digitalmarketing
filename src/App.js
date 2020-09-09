@@ -1,12 +1,11 @@
 import React from "react";
 import "./App.css";
-import TechnologyPage from "./pages/TechnologyPage";
-import TechnologyData from "./data/TechnologyData";
+import AboutUsPage from "./pages/AboutUsPage";
 
 function App() {
   return (
     <div className="App">
-      <TechnologyPage data={TechnologyData} />
+      <AboutUsPage />
     </div>
   );
 }

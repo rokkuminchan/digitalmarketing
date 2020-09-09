@@ -1,4 +1,5 @@
 import AmpIcon from "../img/amp.jpeg";
+import ReactIcon from "../img/react.png";
 
 const technologyData = {
   introduction: {
@@ -10,7 +11,7 @@ const technologyData = {
     {
       title: "AMP",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "AMPは、高速なモバイル対応のページを作るためのWebコンポーネント・フレームワークです。",
       img: {
         src: AmpIcon,
         alt: "AMP",
@@ -18,54 +19,54 @@ const technologyData = {
       link: "https://amp.dev",
     },
     {
-      title: "AMP",
+      title: "BEM",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "BEM(Block Element Modifier)は、フロントエンドで再利用可能なコンポーネントとコード共有を実現するのに役立つ方法論です。",
       img: {
         src: AmpIcon,
-        alt: "AMP",
+        alt: "BEM",
       },
-      link: "https://amp.dev",
+      link: "https://en.bem.info/",
     },
     {
-      title: "AMP",
+      title: "GitHub",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "GitHub（ギットハブ）は、ソフトウェア開発のプラットフォームであり、ソースコードをホスティングするコードのバージョン管理システムです。",
       img: {
         src: AmpIcon,
-        alt: "AMP",
+        alt: "GitHub",
       },
-      link: "https://amp.dev",
+      link: "https://github.com/",
     },
     {
-      title: "AMP",
+      title: "JEST",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "Jest はシンプルさを重視した、快適な JavaScript テスティングフレームワークです。",
       img: {
         src: AmpIcon,
-        alt: "AMP",
+        alt: "JEST",
       },
-      link: "https://amp.dev",
+      link: "https://jestjs.io/",
     },
     {
-      title: "AMP",
+      title: "Material Design",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "チームでAndroid、iOS、Flutter、およびWeb向けの高品質なデジタルエクスペリエンスを構築できるようにGoogleが作成したデザイン・システムです。",
       img: {
         src: AmpIcon,
-        alt: "AMP",
+        alt: "Material Design",
       },
-      link: "https://amp.dev",
+      link: "https://material.io/",
     },
     {
-      title: "AMP",
+      title: "React",
       description:
-        "資産管理、証券・保険の業務システム、生産管理システムなど、多様な金融・業務システム開発に対応可能です。",
+        "React は、Facebookとコミュニティによって開発されているインタラクティブなユーザインタフェース構築のためのJavaScriptライブラリです。",
       img: {
-        src: AmpIcon,
-        alt: "AMP",
+        src: ReactIcon,
+        alt: "React",
       },
-      link: "https://amp.dev",
+      link: "https://reactjs.org/",
     },
   ],
 };

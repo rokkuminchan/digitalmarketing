@@ -66,7 +66,6 @@ function Header({ history }) {
     };
 
     useEffect(() => {
-        //Listening for page changes.
         history.listen(() => {
         setState({ clicked: false, menuIcon: menuOpenIcon});
         });

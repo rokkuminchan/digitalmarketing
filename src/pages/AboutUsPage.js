@@ -4,18 +4,17 @@ import Header from "../sections/Header";
 import Footer from "../sections/Footer";
 import aboutUsData from "../data/AboutUsData";
 import Philosophy from "../sections/Philosophy";
-
-import MemberIntroduction from "../sections/MemberIntroduction";
+import UniversityList from '../sections/about us/UniversityList'
 
 const AboutUsPage = () => {
-  var { philosophy } = aboutUsData;
-  var { memberintroduction } = aboutUsData;
+  var { philosophy, university } = aboutUsData;
+
   return (
     <React.Fragment>
       <Header />
       <main>
         <Philosophy data={philosophy} />
-        <MemberIntroduction data={memberintroduction} />
+        <UniversityList data={university} />
       </main>
       <Footer />
     </React.Fragment>

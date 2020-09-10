@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import {mq, breakpoint} from "../../helper/mediaQuery.js"
+import {mq} from "../../helper/mediaQuery.js"
 export const Wrapper = styled.div({
     width: "100vw",
     overflow: "hidden"

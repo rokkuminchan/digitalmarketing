@@ -73,7 +73,7 @@ function Header({ history }) {
     return (
         <React.Fragment>
             <AppBar 
-                position="sticky"
+                position="fixed"
                 color = "transparent"
             >
                 <section> 

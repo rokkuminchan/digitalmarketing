@@ -1,31 +1,23 @@
 import styled from '@emotion/styled'
-import {mq, breakpoint} from "../../helper/mediaQuery.js"
+import {mq} from "../../helper/mediaQuery.js"
 
 export const UniversityInner = styled.div(props => ({
     display: "grid",
     width: "100%",
-    height: "90vh",
     alignItems: "center",
     gridTemplateAreas: props.index%2 === 0 ? `"image text"` : `"text image"`,
-    gridTemplateColumns: "1.5fr 1fr",
-    
-     // [mq[4]]: {
-     //     height: "40vh",
-     // },
+    gridTemplateColumns: `1.5fr minmax(1fr, max-content)`,
+    marginBottom: "200px",
      [mq[2]]: {
          alignItems: "start",
-         height: "120vh",
          gridTemplateAreas: `"image" "text"`,
          gridTemplateColumns: "1fr",
-         gridTemplateRows: `"0.5fr 1.5fr"`,
-         
+         gridAutoRows: 'minmax(1fr max-content)',
+         gridGap: "200px",
+         marginBottom: "200px",
      },
-     // [mq[1]]: {
-     //     height: "120vh",
-     // },
      [mq[0]]: {
-         height: "140vh",
-        
+        gridGap: "250px",
      },
      
  }))
@@ -33,7 +25,6 @@ export const UniversityInner = styled.div(props => ({
 export const UniversityImage = styled.div({
      gridArea: "image",
      position: "relative",
-    
  })
  
 export const UniversityImageInner = styled.div(props => ({
@@ -47,11 +38,11 @@ export const UniversityImageInner = styled.div(props => ({
          paddingBottom: "96.25%",
      },
      '&>*': {
-         width: props.index%2 === 0 ? "50%" : "70%",
-         height: props.index%2 === 0 ? "60%": "80%",
+         width: props.index%2 === 0 ? "50%" : "55%",
+         height: "60%",
          position: "absolute",
-         top: "47%",
-         left: props.index%2 === 0 ? "52%" : "40%",
+         top: "50%",
+         left: props.index%2 === 0 ? "52%" : "50%",
          transform: `translate(-50%,-50%)`,
          objectFit: "cover",
          borderRadius: props.index%2 === 0 ? "25px 0 0 25px" : "0 25px 25px 0",
@@ -67,11 +58,11 @@ export const UniversityImageBackground = styled.div(props => ({
      
      display: "flex",
      flexDirection: "column",
-     width: props.index%2 === 0 ? "40%" : "60%",
-     height: props.index%2 === 0 ? "100%" : "150%",
+     width: "40%",
+     height: "100%",
      position: "absolute",
      top: "50%",
-     left: props.index%2 === 0 ? "40%" : "55%",
+     left: props.index%2 === 0 ? "40%" : "65%",
      transform: `translate(-50%,-50%)`,
      '& div:first-of-type': {
          width: "100%",
@@ -99,7 +90,7 @@ export const UniversityContent = styled.div(props => ({
      '&  > div': {
          position: "absolute",
          top: "50%",
-         left: props.index%2 === 0 ? "25%" : "55%",
+         left: props.index%2 === 0 ? "35%" : "65%",
          transform: `translate(-50%,-50%)`,
          width: props.index%2 === 0 ? "100%" : "90%",
          color: "#000",

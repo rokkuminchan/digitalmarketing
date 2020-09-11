@@ -3,17 +3,47 @@ import React, { useRef, useEffect} from "react";
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import University from './University'
+import UniversityHeader from "./UniversityHeader"
 import {Wrapper, Container, UniversitiesList, Row, BookmarkList, Bookmark} from "./UniversityList.styles"
 
 gsap.registerPlugin(ScrollTrigger)
 
 
 const UniversityList = (props) => {
-    const {universityItem} = props.data
+    const {introduction, universityItem} = props.data
     let bookmarkRef = useRef(null)
     let rowRef = useRef(null)
+    let universityRefs = useRef([])
+    universityRefs.current = []
+    
+    const addToRefs = (el) => {
+        if (el && !universityRefs.current.includes(el)) {
+            universityRefs.current.push(el)
+        }
+    }
     useEffect(() => {
         let height = rowRef.clientHeight
+        // let tl = gsap.timeline({
+        //     paused: true,
+        //     scrollTrigger: {
+        //         trigger: rowRef,
+        //         start: "top 70%",
+        //         end: "80% center",
+        //         scrub: 0.3,
+        //         markers: true
+        //     }
+        // })
+        // let uni = gsap.utils.toArray(universityRefs.current)
+        // // console.log(uni);
+        // uni.forEach(el => {
+        //     let section = el.querySelectorAll('div img')
+           
+        //     console.log(section);
+        //     tl.fromTo (el, {opacity: 0}, {opacity: 1, duration: 3, stagger: {
+        //         from: "start", each: .1, repeat: 0
+        //       }},0)
+        // })
+        
         ScrollTrigger.create({
             trigger: bookmarkRef,
             start: 'top start',
@@ -22,14 +52,20 @@ const UniversityList = (props) => {
         });
     },[])
     return (
+        <>
+        
         <Wrapper className ="wrapper">
             <Container>
+                
                 <UniversitiesList>
                     <Row ref={el => (rowRef = el)}>
                         {
                             universityItem.map((item, index) => {
                                 return(
-                                    <University key = {index} item = {item} index ={index} />
+                                    <div ref={addToRefs}>
+                                       <University key = {index} item = {item} index ={index} />         
+                                    </div>
+                                    
                                 )
                             })
                         }
@@ -55,6 +91,7 @@ const UniversityList = (props) => {
                 </UniversitiesList>
             </Container>    
         </Wrapper> 
+        </>
     )
 }
 

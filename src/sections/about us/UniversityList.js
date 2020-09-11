@@ -19,7 +19,6 @@ const UniversityList = (props) => {
             start: 'top start',
             end: () => `+=${height/1.45}`,
             pin: true,
-            markers: true,
         });
     },[])
     return (

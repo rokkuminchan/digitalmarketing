@@ -35,6 +35,5 @@ it("can render a view component from data", () => {
     expect(title.textContent).toBe(Item.title);
     expect(subTags.length).toBe(Item.subtitle.length);
     expect(subTags[0].textContent).toBe(Item.subtitle[0]);
-    //expect(subTags[1].textContent).toBe(Item.subtitle[1]);
 
 })

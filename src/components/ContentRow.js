@@ -13,7 +13,7 @@ function ContentRow (props) {
                 {
                     subtitle.map((item, index)=>{
                         return (
-                            <p key = {index}>{item}</p>
+                            <p  key = {index}>{item}</p>
                         )
                     })
                 }

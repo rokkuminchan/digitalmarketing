@@ -14,6 +14,7 @@ export const UniversitiesList = styled.div({
     display: "grid",
     gridTemplateAreas: `"list bookmark"`,
     gridTemplateColumns: `1fr 0.1fr`,
+    gridAutoRows: `minmax(1fr max-content)`
 })
 
 export const Row = styled.div({
@@ -26,16 +27,19 @@ export const BookmarkList = styled.div({
 })
 
 export const Bookmark = styled.div(props => ({
+    
     position: "absolute",
     width: "2px",
-    height: "50vh",
     display: "flex",
     flexDirection: "column",
     alignSelf: "center",
     right: props.inner ? "30px" : "70px",
     top: "10vh",
     [mq[2]]: {
-        right: props.inner ? "30px" : "60px",
+        right: props.inner ? "20px" : "50px",
+    },
+    [mq[0]]: {
+        right: props.inner ? "10px" : "30px",
     },
     '&::before': {
         position: "absolute",
@@ -45,7 +49,13 @@ export const Bookmark = styled.div(props => ({
         width: "1px",
         height: props.inner ? "170px": "100px",
         background: "#fff",
-      
+        [mq[2]]: {
+            top: "150px",
+        },
+        [mq[0]]: {
+            top: "130px",
+            height: props.inner ? "120px": "70px",
+        },
         },
     '& span': {
         marginBottom: "25px",
@@ -54,8 +64,9 @@ export const Bookmark = styled.div(props => ({
         color: "#fff",
         transform: `rotate(90deg)`,
         [mq[2]]: {
-            marginBottom: "15px",
+            marginBottom: "10px",
             fontSize: "10px",
+            fontWeight: 400,
         },
     }
 }))

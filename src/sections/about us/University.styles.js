@@ -17,7 +17,8 @@ export const UniversityInner = styled.div(props => ({
          marginBottom: "200px",
      },
      [mq[0]]: {
-        gridGap: "250px",
+        gridGap: "280px",
+        marginBottom: "250px",
      },
      
  }))

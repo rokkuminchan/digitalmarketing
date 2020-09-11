@@ -8,12 +8,12 @@ function ContentRow (props) {
     
     return (
         <React.Fragment>
-            <Title><StopIcon /><p>{title}</p></Title>
+            <Title><StopIcon /><h6>{title}</h6></Title>
             <Subtitle>
                 {
                     subtitle.map((item, index)=>{
                         return (
-                            <p key = {index}>{item}</p>
+                            <p  key = {index}>{item}</p>
                         )
                     })
                 }

@@ -8,7 +8,7 @@ function ContentRow (props) {
     
     return (
         <React.Fragment>
-            <Title><StopIcon /><h6>{title}</h6></Title>
+            <Title><StopIcon /><p>{title}</p></Title>
             <Subtitle>
                 {
                     subtitle.map((item, index)=>{

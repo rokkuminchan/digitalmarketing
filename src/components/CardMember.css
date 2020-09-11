@@ -1,4 +1,6 @@
-.cardmember {
+@media only screen and (max-width: 768px) {
+  .cardmember {
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -9,11 +11,25 @@
     transition: all 200ms ease-out;
     margin-top: 20px;
   }
-  
-  .cardmember:hover {
-    box-shadow: 0 0 6px rgb(35 173 255);
-  }
-  
+}
+@media only screen and (min-width: 720px) {
+  .cardmember {
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+  transition: all 200ms ease-out;
+  margin-top: 20px;
+}
+}
+.cardmember:hover {
+  box-shadow: 0 0 6px rgb(35 173 255);
+  opacity: 0.9;
+}
   .cardmember__image {
     width: 90%;
     height: 210px;
@@ -31,6 +47,7 @@
     line-height: 30px;
     color: #000077;
     text-align: center;
+    padding: 20px;
   }
   
   .cardmember__description {

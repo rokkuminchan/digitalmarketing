@@ -2,11 +2,13 @@ import styled from '@emotion/styled'
 import {mq} from "../../helper/mediaQuery.js"
 export const Wrapper = styled.div({
     width: "100vw",
-    overflow: "hidden"
+    overflow: "hidden",
+   
 })
 
 export const Container = styled.div({
     width: "100%",
+    
     background: "#0C625E",
 })
 
@@ -14,7 +16,7 @@ export const UniversitiesList = styled.div({
     display: "grid",
     gridTemplateAreas: `"list bookmark"`,
     gridTemplateColumns: `1fr 0.1fr`,
-    gridAutoRows: `minmax(1fr max-content)`
+    gridAutoRows: `minmax(1fr max-content)`,
 })
 
 export const Row = styled.div({

@@ -2,16 +2,14 @@ import szksensei from "../img/szksensei.jpg";
 import huy from "../img/huy.jpg";
 import loc from "../img/loc.jpg";
 import yen from "../img/yen.jpg";
-<<<<<<< HEAD
 import bkhn from "../img/bkhn.jpg"
 import bkdn from "../img/bkdn.jpg"
 import bcvt from "../img/bcvt.jpg"
-=======
 import vien from "../img/vien.jpg";
 import duc from "../img/duc.jpg";
 import linh from "../img/linh.jpg";
 import sinh from "../img/sinh.jpg";
->>>>>>> 1692a58846861347aa332e8c46f98ca7facc294c
+
 const aboutUsData = {
   introduction: {},
   philosophy: {

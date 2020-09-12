@@ -2,19 +2,15 @@ import szksensei from "../img/szksensei.jpg";
 import huy from "../img/huy.jpg";
 import loc from "../img/loc.jpg";
 import yen from "../img/yen.jpg";
-import bkhn from "../img/bkhn.jpg"
-import bkdn from "../img/bkdn.jpg"
-import bcvt from "../img/bcvt.jpg"
-<<<<<<< HEAD
-import tree from "../img/tree.jpg"
-import logo from "../img/logo1.png"
-=======
 import vien from "../img/vien.jpg";
 import duc from "../img/duc.jpg";
 import linh from "../img/linh.jpg";
-import sinh from "../img/sinh.jpg";
+import bkhn from "../img/bkhn.jpg"
+import bkdn from "../img/bkdn.jpg"
+import bcvt from "../img/bcvt.jpg"
+import tree from "../img/tree.jpg"
+import logo from "../img/logo1.png"
 
->>>>>>> 368006eb5cfa7b9d67e675a7ffe181fdc4ba0de3
 const aboutUsData = {
   introduction: {},
   philosophy: {
@@ -121,10 +117,11 @@ const aboutUsData = {
   },
   university: {
 		introduction: {
-			title: "ベトナムは若者の人国が多く、国としてもIT技術に力を入れていますので、IT業界での慢性的な人材不足を解決する国として注目されています。ワールドでも、ベトナムに注目して、2018年からIT人材の採用をしてきています。",
-			description: [
-            "ワールドのITチームでは、ベトナムのトップレベル大学とMOUを締結するとともに、情報処理系学部の卒業生たちを採用しています。",
-			"ITチームのメンバーの卒業大学をご紹介します。",
+      title: "ベトナムは若者の人国が多く、国としてもIT技術に力を入れていますので、IT業界での慢性的な人材不足を解決する国として注目されています。ワールドでも、ベトナムに注目して、2018年からIT人材の採用をしてきています。",
+      subtitle: "ベトナムの大学",
+			descriptions: [
+          "ワールドのITチームでは、ベトナムのトップレベル大学とMOUを締結するとともに、情報処理系学部の卒業生たちを採用しています。",
+			    "ITチームのメンバーの卒業大学をご紹介します。",
       ],
       img: {
         src: tree,

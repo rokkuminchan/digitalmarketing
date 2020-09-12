@@ -10,6 +10,8 @@ import bkdn from "../img/bkdn.jpg"
 import bcvt from "../img/bcvt.jpg"
 import tree from "../img/tree.jpg"
 import logo from "../img/logo1.png"
+import philosophy from "../img/philosophy-bg.jpg"
+import logo2 from "../img/logo2.png"
 
 const aboutUsData = {
   introduction: {},
@@ -45,6 +47,25 @@ const aboutUsData = {
       },
     ],
   },
+  teamwork: {
+    image: {src: logo2, alt:"logo"},
+    img: {src: philosophy, alt: "Team Work" },
+    title: "ITチームの特徴",
+    description:[
+      {
+        title: "日本が好き",
+        subtitle: "全員が日本在住、日本に興味を持って一生懸命日本語を学び、日本で暮らし日本人と働いて、日本の良さを体験している技術者です。言葉や文化、そして業務の理解力で違いが出ます。"
+      },
+      {
+        title: "技術が好き",
+        subtitle: "全員が中興時代からIT興味を持ち、ベトナムまたは、日本で情報処理系の教育を受けた技術者です。好きなことだから頑張れる。また、最先端の技術を常に学んでいます。"
+      },
+      {
+        title: "チームが好き",
+        subtitle: "お互いを理解しあい、強い絆で結ばれたチームです。技術の習得も仕事も力を合わせて、最高の結果を出します。"
+      },
+    ],
+   },
   memberintroduction:{
     title: "チームメンバー",
     description:"我々のチームは優秀なベトナムエンジン中心としたベトナムエンジンを設立します。かれらは有名なべトナム大学を卒業し有名な会社で働いた経験があるし。",

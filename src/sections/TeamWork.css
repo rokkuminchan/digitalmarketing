@@ -1,0 +1,21 @@
+.teamwork {
+  background-color:#2A323F;
+  padding-bottom: 15px;
+  text-align:center;
+}
+
+.teamwork__title {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+.teamwork__image{
+  height: auto;
+  width: 100%;
+}
+.teamwork__img {
+  height: 300px;
+  width: 80%;
+    
+}

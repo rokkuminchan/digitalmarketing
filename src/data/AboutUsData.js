@@ -5,16 +5,8 @@ import yen from "../img/yen.jpg";
 import bkhn from "../img/bkhn.jpg"
 import bkdn from "../img/bkdn.jpg"
 import bcvt from "../img/bcvt.jpg"
-<<<<<<< HEAD
 import tree from "../img/tree.jpg"
 import logo from "../img/logo1.png"
-=======
-import vien from "../img/vien.jpg";
-import duc from "../img/duc.jpg";
-import linh from "../img/linh.jpg";
-import sinh from "../img/sinh.jpg";
-
->>>>>>> 368006eb5cfa7b9d67e675a7ffe181fdc4ba0de3
 const aboutUsData = {
   introduction: {},
   philosophy: {

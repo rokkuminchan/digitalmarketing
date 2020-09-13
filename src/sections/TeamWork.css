@@ -5,17 +5,54 @@
 }
 
 .teamwork__title {
+  padding-top:250px;
   color: white;
   text-align: center;
   font-weight: bold;
   font-size: 24px;
 }
 .teamwork__image{
+  left:0;
+  top:0;
   height: auto;
   width: 100%;
+  object-fit: cover;
 }
 .teamwork__img {
-  height: 300px;
-  width: 80%;
-    
+  position: absolute;
+  width:90%;
+  height: 60%;
+  transform: translate(-106%,50%);
 }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 550px)  {
+  .teamwork__title {
+    padding-top:100px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .teamwork__img {  
+    position: absolute;
+    width:80%;
+    height: 20%;
+    transform: translate(-112%,40%);
+  }
+}
+@media  (min-width: 551px) and (max-width:1024px ) {
+    .teamwork__title {
+      padding-top:115px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .teamwork__img {  
+      position: absolute;  
+      width:80%;
+      height: 20%;
+      transform: translate(-112%,50%);
+    }
+  }
+

@@ -10,7 +10,7 @@ import bkdn from "../img/bkdn.jpg"
 import bcvt from "../img/bcvt.jpg"
 import tree from "../img/tree.jpg"
 import logo from "../img/logo1.png"
-import philosophy from "../img/philosophy-bg.jpg"
+import teamwork from "../img/teamwork.jpg"
 import logo2 from "../img/logo2.png"
 
 const aboutUsData = {
@@ -49,7 +49,7 @@ const aboutUsData = {
   },
   teamwork: {
     image: {src: logo2, alt:"logo"},
-    img: {src: philosophy, alt: "Team Work" },
+    img: {src: teamwork, alt: "Team Work" },
     title: "ITチームの特徴",
     description:[
       {

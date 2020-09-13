@@ -5,17 +5,14 @@ import yen from "../img/yen.jpg";
 import vien from "../img/vien.jpg";
 import duc from "../img/duc.jpg";
 import linh from "../img/linh.jpg";
-import bkhn from "../img/bkhn.jpg"
-import bkdn from "../img/bkdn.jpg"
-import bcvt from "../img/bcvt.jpg"
-import tree from "../img/tree.jpg"
-import logo from "../img/logo1.png"
-<<<<<<< HEAD
-=======
-import philosophy from "../img/philosophy-bg.jpg"
-import logo2 from "../img/logo2.png"
+import bkhn from "../img/bkhn.jpg";
+import bkdn from "../img/bkdn.jpg";
+import bcvt from "../img/bcvt.jpg";
+import tree from "../img/tree.jpg";
+import logo from "../img/logo1.png";
+import logo2 from "../img/logo2.png";
+import teamwork from "../img/teamwork.jpg";
 
->>>>>>> ec3c2a0166150667a742464d70363245adce5841
 const aboutUsData = {
   introduction: {},
   philosophy: {
@@ -52,7 +49,7 @@ const aboutUsData = {
   },
   teamwork: {
     image: {src: logo2, alt:"logo"},
-    img: {src: philosophy, alt: "Team Work" },
+    img: {src: teamwork, alt: "Team Work" },
     title: "ITチームの特徴",
     description:[
       {

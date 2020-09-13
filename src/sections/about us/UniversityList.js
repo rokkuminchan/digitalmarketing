@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 
 const UniversityList = (props) => {
-    const {introduction, universityItem} = props.data
+    const {universityItem} = props.data
     let bookmarkRef = useRef(null)
     let rowRef = useRef(null)
     let universityRefs = useRef([])
@@ -44,34 +44,34 @@ const UniversityList = (props) => {
         //       }},0)
         // })
         
-        ScrollTrigger.create({
-            trigger: bookmarkRef,
-            start: 'top start',
-            end: () => `+=${height/1.45}`,
-            pin: true,
-        });
+        // ScrollTrigger.create({
+        //     trigger: ".bookmark",
+        //     start: '.row start',
+        //     end: () => `+=${height/1.45}`,
+        //     pin: true,
+        //     pinReparent: true,
+        //     markers: true,
+        // });
     },[])
     return (
         <>
         
         <Wrapper className ="wrapper">
             <Container>
-                
                 <UniversitiesList>
-                    <Row ref={el => (rowRef = el)}>
+                    <Row className="row" ref={el => (rowRef = el)}>
                         {
                             universityItem.map((item, index) => {
                                 return(
-                                    <div ref={addToRefs}>
-                                       <University key = {index} item = {item} index ={index} />         
+                                    <div key = {index} ref={addToRefs}>
+                                       <University item = {item} index ={index} />         
                                     </div>
-                                    
                                 )
                             })
                         }
                     </Row>
-                    <BookmarkList>
-                        <div ref={el => (bookmarkRef = el)}>
+                    <BookmarkList ref={el => (bookmarkRef = el)}>
+                        <div className="bookmark">
                             <Bookmark>
                                 <span>W</span>
                                 <span>O</span>

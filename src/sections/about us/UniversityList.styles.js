@@ -16,7 +16,7 @@ export const UniversitiesList = styled.div({
     display: "grid",
     gridTemplateAreas: `"list bookmark"`,
     gridTemplateColumns: `1fr 0.1fr`,
-    gridAutoRows: `minmax(1fr max-content)`,
+    gridAutoRows: "1fr",
 })
 
 export const Row = styled.div({

@@ -5,7 +5,6 @@ import yen from "../img/yen.jpg";
 import vien from "../img/vien.jpg";
 import duc from "../img/duc.jpg";
 import linh from "../img/linh.jpg";
-<<<<<<< HEAD
 import bkhn from "../img/bkhn.jpg";
 import bkdn from "../img/bkdn.jpg";
 import bcvt from "../img/bcvt.jpg";
@@ -13,15 +12,6 @@ import tree from "../img/tree.jpg";
 import logo from "../img/logo1.png";
 import logo2 from "../img/logo2.png";
 import teamwork from "../img/teamwork.jpg";
-=======
-import bkhn from "../img/bkhn.jpg"
-import bkdn from "../img/bkdn.jpg"
-import bcvt from "../img/bcvt.jpg"
-import tree from "../img/tree.jpg"
-import logo from "../img/logo1.png"
-import teamwork from "../img/teamwork.jpg"
-import logo2 from "../img/logo2.png"
->>>>>>> 85e999dc406311d2df4226cd2095d359c1532b6e
 
 const aboutUsData = {
   introduction: {},

@@ -1,15 +1,16 @@
+
 .teamwork {
   background-color:#2A323F;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   text-align:center;
 }
 
 .teamwork__title {
-  padding-top:200px;
+  padding-top:300px;
   color: white;
   text-align: center;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2em;
 }
 .teamwork__image{
   left:0;
@@ -28,7 +29,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 550px)  {
   .teamwork__title {
-    padding-top:70px;
+    padding-top:120px;
     color: white;
     text-align: center;
     font-weight: bold;

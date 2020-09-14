@@ -14,7 +14,6 @@
 }
 @media only screen and (min-width: 720px) {
   .cardmember {
-    
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,6 +23,8 @@
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   transition: all 200ms ease-out;
   margin-top: 20px;
+  font-size: 1em;
+  text-align: justify;
 }
 }
 .cardmember:hover {
@@ -42,7 +43,7 @@
   }
   
   .cardmember__title {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
     line-height: 30px;
     color: #000077;

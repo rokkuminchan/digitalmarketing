@@ -28,10 +28,10 @@
   .description__subtitle {
     font-size: 14px;
     color: white;
-    text-align: left;
+    text-align: justify;
     width: auto;
-    padding-left:10px;   
-    padding-right:10px; 
+    padding-left:20px;   
+    padding-right:20px; 
   }
 }
 @media  (min-width: 551px) and (max-width:1024px ) {

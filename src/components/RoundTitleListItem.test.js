@@ -9,7 +9,26 @@ import AboutUsData from "/.AboutUsData";
 
 let container;
 
-const Data = {};
+const RoundTitleListItem = [
+  {
+    philosophy: {
+      title: "PHILOSOPHY",
+      mindsets: [
+        {
+          title: "MISSION",
+          description: "日本のに求められる高度IT人材を派遣する。",
+        },
+        {
+          title: "VISION",
+          description:
+            "外国人IT技術者の「３つの壁」を乗り超える、最先端のIT技術を駆使して日本をサポートする。",
+        },
+      ],
+      
+    },
+  },
+
+];
 
 beforeEach(() => {
   container = document.createElement("div");
@@ -22,32 +41,14 @@ afterEach(() => {
 });
 
 it("can render a view component from data", () => {
-    const RoundTitleListItem = [
-      {
-        philosophy: {
-          title: "PHILOSOPHY",
-          mindsets: [
-            {
-              title: "MISSION",
-              description: "日本のに求められる高度IT人材を派遣する。",
-            },
-            {
-              title: "VISION",
-              description:
-                "外国人IT技術者の「３つの壁」を乗り超える、最先端のIT技術を駆使して日本をサポートする。",
-            },
-          ],
-          
-        },
-      },
-
-    ];
+    
   act(() => {
     ReactDOM.render(<RoundTitleListItem data={Data} />, container);
   });
-  const RoundTitle = container.querySelector("round-title-list-item__title") ;
-  const Description = container.querySelector("round-title-list-item__description");
+  const RoundTitle = container.querySelector("h1") ;
+  const Description = container.querySelector("p");
 
-  expect(RoundTitle).toBe(RoundTitleListItem.title);
-  expect(Description).toBe(RoundTitleListItem.Description);
+  expect(RoundTitle.textContent).toBe(RoundTitleListItem.title);
+  expect(Description.textContent).toBe(RoundTitleListItem.Description);
 });
+

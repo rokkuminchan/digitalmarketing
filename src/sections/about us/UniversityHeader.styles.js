@@ -8,7 +8,7 @@ export const Wrapper = styled.div({
         "logo background1"
         "content background2"
    `,
-   gridTemplateRows: "1fr 2fr",
+   gridTemplateRows: "1fr 1.5fr",
    gridAutoColumns: "1fr 1fr",
    fontSize: "16px",
    fontWeight: 700,

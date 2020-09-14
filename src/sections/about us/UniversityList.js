@@ -45,17 +45,16 @@ const UniversityList = (props) => {
         // })
         
         // ScrollTrigger.create({
-        //     trigger: ".bookmark",
-        //     start: '.row start',
+        //     trigger: bookmarkRef,
+        //     start: "top center",
+        //     // end: "bottom center",
         //     end: () => `+=${height/1.45}`,
         //     pin: true,
-        //     pinReparent: true,
+        //     // pinReparent: true,
         //     markers: true,
         // });
     },[])
     return (
-        <>
-        
         <Wrapper className ="wrapper">
             <Container>
                 <UniversitiesList>
@@ -71,7 +70,7 @@ const UniversityList = (props) => {
                         }
                     </Row>
                     <BookmarkList ref={el => (bookmarkRef = el)}>
-                        <div className="bookmark">
+                        <div id="bookmark">
                             <Bookmark>
                                 <span>W</span>
                                 <span>O</span>
@@ -86,12 +85,11 @@ const UniversityList = (props) => {
                                 <span>K</span>
                                 <span>S</span>
                             </Bookmark>
-                        </div>
+                            </div>
                    </BookmarkList>
                 </UniversitiesList>
             </Container>    
         </Wrapper> 
-        </>
     )
 }
 

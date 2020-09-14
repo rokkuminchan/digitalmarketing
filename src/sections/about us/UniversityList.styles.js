@@ -3,7 +3,7 @@ import {mq} from "../../helper/mediaQuery.js"
 export const Wrapper = styled.div({
     width: "100vw",
     overflow: "hidden",
-   
+    
 })
 
 export const Container = styled.div({
@@ -17,6 +17,7 @@ export const UniversitiesList = styled.div({
     gridTemplateAreas: `"list bookmark"`,
     gridTemplateColumns: `1fr 0.1fr`,
     gridAutoRows: "1fr",
+    position: "relative"
 })
 
 export const Row = styled.div({
@@ -25,7 +26,10 @@ export const Row = styled.div({
 
 export const BookmarkList = styled.div({
     gridArea: "bookmark",
-    position: "relative",
+    '& div': {
+        position: "relative",
+        display: "flex",
+    }
 })
 
 export const Bookmark = styled.div(props => ({
@@ -35,13 +39,10 @@ export const Bookmark = styled.div(props => ({
     display: "flex",
     flexDirection: "column",
     alignSelf: "center",
-    right: props.inner ? "30px" : "70px",
-    top: "10vh",
-    [mq[2]]: {
-        right: props.inner ? "20px" : "50px",
-    },
+    right: props.inner ? "-45%" : "-75%",
+    top: "20%",
     [mq[0]]: {
-        right: props.inner ? "10px" : "30px",
+        right: props.inner ? "-30%" : "-75%",
     },
     '&::before': {
         position: "absolute",
@@ -49,25 +50,25 @@ export const Bookmark = styled.div(props => ({
         top: "230px",
         content: `''`,
         width: "1px",
-        height: props.inner ? "170px": "100px",
+        height: props.inner ? "100px": "170px",
         background: "#fff",
         [mq[2]]: {
             top: "150px",
         },
         [mq[0]]: {
             top: "130px",
-            height: props.inner ? "120px": "70px",
+            height: props.inner ? "70px": "120px",
         },
         },
     '& span': {
         marginBottom: "25px",
-        fontWeight: 700,
-        fontSize: "15px",
+        fontWeight: 600,
+        fontSize: "1em",
         color: "#fff",
         transform: `rotate(90deg)`,
         [mq[2]]: {
             marginBottom: "10px",
-            fontSize: "10px",
+            fontSize: "0.8em",
             fontWeight: 400,
         },
     }

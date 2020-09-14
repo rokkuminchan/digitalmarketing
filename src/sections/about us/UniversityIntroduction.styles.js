@@ -16,7 +16,7 @@ export const Title = styled.div({
     padding: "24px 70px",
     marginBottom: "5vh",
     '& h1':{
-        fontSize: "30px",
+        fontSize: "25px",
         fontWeight: 700,
         position: "relative",
         zIndex: 1,
@@ -41,7 +41,7 @@ export const Description = styled.div({
     margin: "0 auto",
     marginBottom: "50px",
     '& p': {
-        fontSize: "24px",
+        fontSize: "1.5em",
         fontWeight: 500,
         margin: "24px 0"
     }

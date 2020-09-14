@@ -6,19 +6,24 @@ export const UniversityInner = styled.div(props => ({
     width: "100%",
     alignItems: "center",
     gridTemplateAreas: props.index%2 === 0 ? `"image text"` : `"text image"`,
-    gridTemplateColumns: `1.5fr minmax(1fr, max-content)`,
-    marginBottom: "200px",
+    gridTemplateColumns: "1.3fr 1fr",
+    marginBottom: "130px",
      [mq[2]]: {
-         alignItems: "start",
-         gridTemplateAreas: `"image" "text"`,
-         gridTemplateColumns: "1fr",
-         gridAutoRows: 'minmax(1fr max-content)',
-         gridGap: "200px",
-         marginBottom: "200px",
+         
+         gridGap: "90px",
+         marginBottom: "90px",
+     },
+     [mq[1]]: {
+        gridGap: "150px",
+        marginBottom: "150px",
      },
      [mq[0]]: {
-        gridGap: "280px",
-        marginBottom: "250px",
+        alignItems: "start",
+        gridTemplateAreas: `"image" "text"`,
+        gridTemplateColumns: "1fr",
+        gridAutoRows: 'minmax(1fr, max-content)',
+        gridGap: "130px",
+        marginBottom: "150px",
      },
      
  }))
@@ -48,10 +53,20 @@ export const UniversityImageInner = styled.div(props => ({
          objectFit: "cover",
          borderRadius: props.index%2 === 0 ? "25px 0 0 25px" : "0 25px 25px 0",
          [mq[2]]: {
-             width: "60%",
-             height: props.index%2 === 0 ? "60%": "60%",
-             left: props.index%2 === 0 ? "60%" : "50%",
+             width: "45%",
+             height: "45%",
+             left: props.index%2 === 0 ? "60%" : "55%",
          },
+         [mq[1]]: {
+            width: "60%",
+            height: "55%",
+            left: props.index%2 === 0 ? "60%": "50%",
+        },
+        [mq[0]]: {
+            width: "65%",
+            height: "45%",
+            left: props.index%2 === 0 ? "60%" : "50%",
+        },
      }
  }))
  
@@ -79,31 +94,36 @@ export const UniversityImageBackground = styled.div(props => ({
          marginTop: "-1px"
      },
      [mq[2]]: {
-         height: "85%",
-         width: "40%",
-         left: props.index%2 === 0 ? "40%" : "68%"
-     }
+         height: "65%",
+         width: "30%",
+         left: props.index%2 === 0 ? "45%" : "70%"
+     },
+     [mq[1]]: {
+        height: "90%",
+        width: "40%",
+        left: props.index%2 === 0 ? "40%" : "70%"
+    },
+    [mq[0]]: {
+        height: "75%",
+        width: "45%",
+        left: props.index%2 === 0 ? "40%" : "70%"
+    },
  }))
  
 export const UniversityContent = styled.div(props => ({
      gridArea: "text",
      position: "relative",
-     '&  > div': {
+     '& > div': {
          position: "absolute",
+         paddingTop: "100px",
          top: "50%",
          left: props.index%2 === 0 ? "35%" : "65%",
          transform: `translate(-50%,-50%)`,
          width: props.index%2 === 0 ? "100%" : "90%",
-         color: "#000",
-         textAlign: "justify",
-         fontSize: "24px",
-         fontWeight: 500,
-         letterSpacing: "1px",
          [mq[2]]: {
              left: "50%",
              width: "90%",
              padding: "0 24px",
-             fontSize: "10px",
          },
      }
  }))

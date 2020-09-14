@@ -122,6 +122,7 @@ export const Center = styled.div({
     '& div:last-of-type': {
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
         [mq[2]]: {
             display: "none"
         },

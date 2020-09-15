@@ -28,17 +28,25 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 550px)  {
   .teamwork__title {
-    padding-top:70px;
+    padding-top:60px;
     color: white;
     text-align: center;
     font-weight: bold;
     font-size: 24px;
+  }
+  .teamwork__image{
+    left:0;
+    top:0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
   }
   .teamwork__img {  
     position: absolute;
     width:80%;
     height: 15%;
     transform: translate(-112%,50%);
+    object-fit: cover;
   }
 }
 @media  (min-width: 551px) and (max-width:1024px ) {

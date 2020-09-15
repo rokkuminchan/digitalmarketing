@@ -9,7 +9,7 @@ export const Wrapper = styled.div({
         "content background2"
    `,
    gridTemplateColumns: "1fr 1.5fr",
-   gridTemplateRows: "1fr 1.4fr",
+   gridTemplateRows: "1fr 1.2fr",
    fontSize: "16px",
    fontWeight: 700,
    [mq[2]]: {
@@ -20,10 +20,13 @@ export const Wrapper = styled.div({
             "background2"
         `,
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "1fr 0.5fr 1fr 1fr"
+        gridTemplateRows: "0.5fr 0.5fr 1fr 1fr"
     },
     [mq[0]]: {
         gridTemplateRows: "1fr 1fr 1fr 1fr"
+    },
+    [mq[1]]: {
+        gridTemplateRows: "0.3fr 0.3fr 1fr 1fr"
     },
 })
 
@@ -33,6 +36,7 @@ export const LogoInner = styled.div({
    position: "relative",
    width: "100%",
    height: "440px",
+   
    [mq[3]]: {
         height: "350px",
     },
@@ -46,7 +50,7 @@ export const LogoInner = styled.div({
 
 export const Logo = styled.div(props => ({
     position: "absolute",
-    fontSize: "90px",
+    fontSize: "5em",
     color: props.upper ? "#fff" : "#053C76",
     top: props.upper ? "62%" : "70%",
     left: props.upper ? "50%" : "49%",
@@ -57,6 +61,10 @@ export const Logo = styled.div(props => ({
     [mq[2]]: {
         top: props.upper ? "35%" : "50%",
         left: props.upper ? "50%" : "49%",
+        fontSize:"4em"
+    },
+    [mq[0]]: {
+        fontSize:"3em"
     },
     '& p': {
         textShadow: props.upper ? `
@@ -93,6 +101,11 @@ export const Content = styled.div({
             color: "#17427A",
             left: "50%",
         },
+        [mq[0]]: {
+            color: "#17427A",
+            top: "100%",
+            fontSize:"0.9em",
+        },
    }
 
 })
@@ -116,7 +129,7 @@ export const Image = styled.div({
    '& img': {
        objectFit: "cover",
        width: "60%",
-       height: "80%",
+       height: "60%",
        position: "absolute",
        top: "50%",
        left: "50%",
@@ -124,5 +137,9 @@ export const Image = styled.div({
        [mq[2]]: {
             width: "80%",
         },
+        [mq[0]]: {
+            top:"60%"
+        },
+        
    }
 })

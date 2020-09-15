@@ -55,6 +55,7 @@ export const UniversityImageInner = styled.div(props => ({
              width: "45%",
              height: "45%",
              left: props.index%2 === 0 ? "60%" : "55%",
+             top: "45%",
          },
          [mq[1]]: {
             width: "60%",
@@ -79,6 +80,22 @@ export const UniversityImageBackground = styled.div(props => ({
      top: "70%",
      left: props.index%2 === 0 ? "40%" : "65%",
      transform: `translate(-50%,-50%)`,
+     [mq[2]]: {
+        height: "65%",
+        width: "30%",
+        left: props.index%2 === 0 ? "45%" : "70%",
+        top: "45%"
+    },
+    [mq[1]]: {
+       height: "90%",
+       width: "40%",
+       left: props.index%2 === 0 ? "40%" : "70%"
+    },
+    [mq[0]]: {
+        height: "75%",
+        width: "45%",
+        left: props.index%2 === 0 ? "40%" : "70%"
+    },
      '& div:first-of-type': {
          width: "100%",
          height: "50%",
@@ -92,21 +109,7 @@ export const UniversityImageBackground = styled.div(props => ({
          border: 0,
          marginTop: "-1px"
      },
-     [mq[2]]: {
-         height: "65%",
-         width: "30%",
-         left: props.index%2 === 0 ? "45%" : "70%"
-     },
-     [mq[1]]: {
-        height: "90%",
-        width: "40%",
-        left: props.index%2 === 0 ? "40%" : "70%"
-    },
-    [mq[0]]: {
-        height: "75%",
-        width: "45%",
-        left: props.index%2 === 0 ? "40%" : "70%"
-    },
+     
  }))
  
 export const UniversityContent = styled.div(props => ({

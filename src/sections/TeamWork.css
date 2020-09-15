@@ -6,7 +6,7 @@
 }
 
 .teamwork__title {
-  padding-top:300px;
+  padding-top:250px;
   color: white;
   text-align: center;
   font-weight: bold;
@@ -18,18 +18,20 @@
   height: auto;
   width: 100%;
   object-fit: cover;
+  
 }
 .teamwork__img {
   position: absolute;
   width:90%;
   height: 50%;
   transform: translate(-105.7%,55%);
-  object-fit: cover;
+  object-fit: fill;
+  overflow:hidden;
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 550px)  {
   .teamwork__title {
-    padding-top:120px;
+    padding-top:100px;
     color: white;
     text-align: center;
     font-weight: bold;

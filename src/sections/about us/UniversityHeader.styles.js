@@ -79,7 +79,7 @@ export const Content = styled.div({
     },
    '& p': {
        width: "60%",
-       margin: "0 auto",
+       margin: "auto",
        color: "#fff",
        textAlign: "justify",
        position: "absolute",
@@ -111,7 +111,7 @@ export const Image = styled.div({
     gridRow: `background1-start / background2-end`,
     gridColumn: `background1-start / background2-end`,
     width: "100%",
-     height: "100%",
+     height: "90%",
      position: "relative",
    '& img': {
        objectFit: "cover",

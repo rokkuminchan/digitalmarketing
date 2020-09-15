@@ -21,27 +21,22 @@ const UniversityList = (props) => {
         }
     }
     useEffect(() => {
-        
-        // let tl = gsap.timeline({
-        //     paused: true,
-        //     scrollTrigger: {
-        //         trigger: rowRef,
-        //         start: "top 70%",
-        //         end: "80% center",
-        //         scrub: 0.3,
-        //         markers: true
-        //     }
-        // })
-        // let uni = gsap.utils.toArray(universityRefs.current)
-        // // console.log(uni);
-        // uni.forEach(el => {
-        //     let section = el.querySelectorAll('div img')
-           
-        //     console.log(section);
-        //     tl.fromTo (el, {opacity: 0}, {opacity: 1, duration: 3, stagger: {
-        //         from: "start", each: .1, repeat: 0
-        //       }},0)
-        // })
+        const university = gsap.utils.toArray(universityRefs.current)
+        university.forEach(el => {
+            const section = el.querySelectorAll('div')
+            const tl = gsap.timeline({
+                paused: true,
+                scrollTrigger: {
+                    trigger: el,
+                    start: "top 85%",
+                    end: "80% center",
+                    scrub: true,
+                }
+            })
+            tl.fromTo (section, {autoAlpha: 0}, {autoAlpha: 1, ease: "power3.out", stagger: {
+                from: "start", each: .1, repeat: 0
+              }},0)
+        })
         
         ScrollTrigger.create({
             trigger: bookmarkRef,

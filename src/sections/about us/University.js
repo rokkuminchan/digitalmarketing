@@ -1,12 +1,10 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
 import ContentRow from "../../components/ContentRow"
 import {UniversityInner, UniversityImage, UniversityImageInner, UniversityImageBackground, UniversityContent} from "./University.styles"
 
 const University = (props) => {
-    const {description, img, color} = props.item
+    const {name, description, img, color} = props.item
     const index = props.index
-    
     return (
         <UniversityInner index = {index}>
             <UniversityImage>
@@ -15,7 +13,7 @@ const University = (props) => {
                     <div></div>
                 </UniversityImageBackground>
                 <UniversityImageInner index = {index}>
-                        <img src={img.src} alt="image" />
+                        <img src={img.src} alt={name} />
                 </UniversityImageInner>
             </UniversityImage>
             <UniversityContent index = {index}>

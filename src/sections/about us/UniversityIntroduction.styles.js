@@ -50,8 +50,13 @@ export const Description = styled.div({
     margin: "0 auto",
     marginBottom: "50px",
     '& p': {
-        fontSize: "1.5em",
+        fontSize: "1em",
         fontWeight: 500,
-        margin: "24px 0"
+        letterSpacing: "3px",
+        lineHeight: 2,
+        margin: "24px 0",
+        [mq[2]]: {
+            fontSize: "0.8em",
+        },
     }
 })

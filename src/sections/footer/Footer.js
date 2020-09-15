@@ -1,5 +1,4 @@
-import React, { useRef, useEffect } from "react";
-import { gsap } from "gsap";
+import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube } from 'react-icons/fa'
 import Logo from '../../img/logo.png'
 import {Wrapper, Shape, Left, Center, Right, Copyright} from "./Footer.styles"

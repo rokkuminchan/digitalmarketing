@@ -15,11 +15,17 @@ export const Title = styled.div({
     color: "#053C76",
     padding: "24px 70px",
     marginBottom: "5vh",
+    [mq[0]]: {
+        padding: "14px 30px",
+    },
     '& h1':{
-        fontSize: "30px",
+        fontSize: "25px",
         fontWeight: 700,
         position: "relative",
         zIndex: 1,
+        [mq[0]]: {
+            fontSize: "20px",
+        },
         '&::before': {
             display: "block",
             position: "absolute",
@@ -31,6 +37,9 @@ export const Title = styled.div({
             transform: `translateY(-50%)`,
             backgroundColor: "#F3EF55",
             zIndex: "-1",
+            [mq[0]]: {
+                height: "10px",
+            },
         }
     }
 })
@@ -41,7 +50,7 @@ export const Description = styled.div({
     margin: "0 auto",
     marginBottom: "50px",
     '& p': {
-        fontSize: "24px",
+        fontSize: "1.5em",
         fontWeight: 500,
         margin: "24px 0"
     }

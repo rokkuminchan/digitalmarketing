@@ -13,11 +13,11 @@ function Header({ history }) {
     const menuOpenIcon = <ToggleButton><MenuOpenRounded color="primary" /></ToggleButton>
     const menuCloseIcon = <ToggleButton><CloseOutlined color="primary" /></ToggleButton>
     const items= [
-        {id: '/', name: "Home"},
-        {id: '/service', name: "Services"},
-        {id: '/technology', name: "Technology"},
-        {id: '/contact', name: "Contact"},
-        {id: '/about', name: "About us"}
+        {id: '/', name: "ホーム"},
+        {id: '/service', name: "サービス"},
+        {id: '/technology', name: "技術"},
+        {id: '/contact', name: "お問い合わせ"},
+        {id: '/about', name: "我々について"}
     ]
     const NavLinkItem = (props) => {
         const {id, name} = props.item

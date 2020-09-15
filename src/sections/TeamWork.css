@@ -1,15 +1,16 @@
+
 .teamwork {
   background-color:#2A323F;
-  padding-bottom: 150px;
+  padding-bottom: 120px;
   text-align:center;
 }
 
 .teamwork__title {
-  padding-top:200px;
+  padding-top:250px;
   color: white;
   text-align: center;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 2em;
 }
 .teamwork__image{
   left:0;
@@ -17,18 +18,20 @@
   height: auto;
   width: 100%;
   object-fit: cover;
+  
 }
 .teamwork__img {
   position: absolute;
   width:90%;
   height: 50%;
   transform: translate(-105.7%,55%);
-  object-fit: cover;
+  object-fit: fill;
+  overflow:hidden;
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 550px)  {
   .teamwork__title {
-    padding-top:70px;
+    padding-top:100px;
     color: white;
     text-align: center;
     font-weight: bold;

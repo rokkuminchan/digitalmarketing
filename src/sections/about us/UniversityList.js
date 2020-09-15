@@ -3,7 +3,6 @@ import React, { useRef, useEffect} from "react";
 import gsap from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import University from './University'
-import UniversityHeader from "./UniversityHeader"
 import {Wrapper, Container, UniversitiesList, Row, BookmarkList, Bookmark} from "./UniversityList.styles"
 
 gsap.registerPlugin(ScrollTrigger)
@@ -22,7 +21,7 @@ const UniversityList = (props) => {
         }
     }
     useEffect(() => {
-        let height = rowRef.clientHeight
+        
         // let tl = gsap.timeline({
         //     paused: true,
         //     scrollTrigger: {
@@ -44,15 +43,13 @@ const UniversityList = (props) => {
         //       }},0)
         // })
         
-        // ScrollTrigger.create({
-        //     trigger: bookmarkRef,
-        //     start: "top center",
-        //     // end: "bottom center",
-        //     end: () => `+=${height/1.45}`,
-        //     pin: true,
-        //     // pinReparent: true,
-        //     markers: true,
-        // });
+        ScrollTrigger.create({
+            trigger: bookmarkRef,
+            start: "top 30%",
+            end: () => `+=${rowRef.clientHeight/1.45}`,
+            pin: true,
+            markers: true,
+        });
     },[])
     return (
         <Wrapper className ="wrapper">
@@ -69,8 +66,8 @@ const UniversityList = (props) => {
                             })
                         }
                     </Row>
-                    <BookmarkList ref={el => (bookmarkRef = el)}>
-                        <div id="bookmark">
+                    <BookmarkList>
+                        <div id="bookmark" ref={el => (bookmarkRef = el)}>
                             <Bookmark>
                                 <span>W</span>
                                 <span>O</span>

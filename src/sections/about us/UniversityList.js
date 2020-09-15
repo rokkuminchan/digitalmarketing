@@ -48,7 +48,6 @@ const UniversityList = (props) => {
             start: "top 30%",
             end: () => `+=${rowRef.clientHeight/1.45}`,
             pin: true,
-            markers: true,
         });
     },[])
     return (

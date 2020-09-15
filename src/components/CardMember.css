@@ -10,6 +10,7 @@
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
     transition: all 200ms ease-out;
     margin-top: 20px;
+    font-size: 0.8em;
   }
 }
 @media only screen and (min-width: 720px) {

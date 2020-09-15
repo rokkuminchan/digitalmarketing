@@ -1,12 +1,13 @@
 
 import React from 'react';
-import {Wrapper, LogoInner, Content, Background1, Background2, Image} from "./UniversityHeader.styles"
+import {Wrapper, LogoInner, Logo, Content, Background1, Background2, Image} from "./UniversityHeader.styles"
 
 const UniversityHeader = (props) => {
   return (
       <Wrapper>
         <LogoInner>
-            <img className="logo" src= {props.data.logo.src} alt={props.data.logo.alt}/>  
+            <Logo upper><p>WORLD</p></Logo>
+            <Logo><p>WORKS</p></Logo>
         </LogoInner>
         <Content>
             <p>{props.data.title}</p>

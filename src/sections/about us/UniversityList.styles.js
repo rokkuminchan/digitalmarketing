@@ -21,7 +21,7 @@ export const UniversitiesList = styled.div({
 })
 
 export const Row = styled.div({
-        gridArea: "list"
+    gridArea: "list",
 })
 
 export const BookmarkList = styled.div({
@@ -42,7 +42,7 @@ export const Bookmark = styled.div(props => ({
     right: props.inner ? "-45%" : "-75%",
     top: "20%",
     [mq[0]]: {
-        right: props.inner ? "-30%" : "-75%",
+        right: props.inner ? "-10%" : "-70%",
     },
     '&::before': {
         position: "absolute",

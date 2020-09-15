@@ -7,23 +7,22 @@ export const UniversityInner = styled.div(props => ({
     alignItems: "center",
     gridTemplateAreas: props.index%2 === 0 ? `"image text"` : `"text image"`,
     gridTemplateColumns: "1.3fr 1fr",
-    marginBottom: "130px",
+    marginBottom: "170px",
      [mq[2]]: {
-         
-         gridGap: "90px",
-         marginBottom: "90px",
+        alignItems: "start",
+        gridTemplateAreas: `"image" "text"`,
+        gridTemplateColumns: "1fr",
+        gridAutoRows: 'minmax(1fr, max-content)',
+        gridGap: "80px",
+        marginBottom: "150px",
      },
      [mq[1]]: {
         gridGap: "150px",
         marginBottom: "150px",
      },
      [mq[0]]: {
-        alignItems: "start",
-        gridTemplateAreas: `"image" "text"`,
-        gridTemplateColumns: "1fr",
-        gridAutoRows: 'minmax(1fr, max-content)',
-        gridGap: "130px",
-        marginBottom: "150px",
+        gridGap: "190px",
+        marginBottom: "190px",
      },
      
  }))
@@ -47,7 +46,7 @@ export const UniversityImageInner = styled.div(props => ({
          width: props.index%2 === 0 ? "50%" : "55%",
          height: "60%",
          position: "absolute",
-         top: "50%",
+         top: "70%",
          left: props.index%2 === 0 ? "52%" : "50%",
          transform: `translate(-50%,-50%)`,
          objectFit: "cover",
@@ -77,7 +76,7 @@ export const UniversityImageBackground = styled.div(props => ({
      width: "40%",
      height: "100%",
      position: "absolute",
-     top: "50%",
+     top: "70%",
      left: props.index%2 === 0 ? "40%" : "65%",
      transform: `translate(-50%,-50%)`,
      '& div:first-of-type': {
@@ -115,7 +114,7 @@ export const UniversityContent = styled.div(props => ({
      position: "relative",
      '& > div': {
          position: "absolute",
-         paddingTop: "100px",
+         paddingTop: "150px",
          top: "50%",
          left: props.index%2 === 0 ? "35%" : "65%",
          transform: `translate(-50%,-50%)`,
@@ -123,7 +122,7 @@ export const UniversityContent = styled.div(props => ({
          [mq[2]]: {
              left: "50%",
              width: "90%",
-             padding: "0 24px",
+             padding: 0,
          },
      }
  }))

@@ -8,8 +8,8 @@ export const Wrapper = styled.div({
         "logo background1"
         "content background2"
    `,
-   gridTemplateRows: "1fr 1.5fr",
-   gridAutoColumns: "1fr 1fr",
+   gridTemplateColumns: "1fr 1.5fr",
+   gridTemplateRows: "1fr 1.4fr",
    fontSize: "16px",
    fontWeight: 700,
    [mq[2]]: {
@@ -23,21 +23,50 @@ export const Wrapper = styled.div({
         gridTemplateRows: "1fr 0.5fr 1fr 1fr"
     },
     [mq[0]]: {
-        gridTemplateRows: "1fr 1.5fr 1fr 1fr"
+        gridTemplateRows: "1fr 1fr 1fr 1fr"
     },
-   '& p': {
-       color: "#fff",
-       textAlign: "justify",
-   }
 })
 
 export const LogoInner = styled.div({
    gridArea: "logo",
    background: "#f8fcff",
-   '& img': {
-       width: "90%",
-   }
+   position: "relative",
+   width: "100%",
+   height: "440px",
+   [mq[3]]: {
+        height: "350px",
+    },
+    [mq[2]]: {
+        height: "250px",
+    },
+    [mq[0]]: {
+        height: "200px",
+    },
 })
+
+export const Logo = styled.div(props => ({
+    position: "absolute",
+    fontSize: "90px",
+    color: props.upper ? "#fff" : "#053C76",
+    top: props.upper ? "62%" : "70%",
+    left: props.upper ? "50%" : "49%",
+    transform: `translate(-50%, -50%)`,
+    [mq[3]]: {
+        left: props.upper ? "62%" : "61%",
+    },
+    [mq[2]]: {
+        top: props.upper ? "35%" : "50%",
+        left: props.upper ? "50%" : "49%",
+    },
+    '& p': {
+        textShadow: props.upper ? `
+            -1px -1px 0 #C3C6C6,
+            1px -1px 0 #C3C6C6,
+            -1px 1px 0 #C3C6C6,
+            1px 1px 0 #C3C6C6
+        `: "none"
+    }
+ }))
 
 export const Content = styled.div({
    background: "#0c625e",
@@ -54,11 +83,15 @@ export const Content = styled.div({
        color: "#fff",
        textAlign: "justify",
        position: "absolute",
-       top: "50%",
+       top: "30%",
        left: "50%",
        transform: `translate(-50%, -50%)`,
+       [mq[3]]: {
+        left: "60%",
+        },
        [mq[2]]: {
             color: "#17427A",
+            left: "50%",
         },
    }
 

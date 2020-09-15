@@ -14,8 +14,8 @@
     font-size: 0.9em;
     color: white;
     text-align: left;
-    padding-left: 120px;
-    padding-right:90px;
+    padding-left: 85px;
+    padding-right:85px;
   }
   /* Extra Small Devices, Phones */
   @media only screen and (max-width: 550px)  { 

@@ -9,7 +9,7 @@ export const Wrapper = styled.div({
         "content background2"
    `,
    gridTemplateColumns: "1fr 1.5fr",
-   gridTemplateRows: "1fr 1.2fr",
+   gridTemplateRows: "0.7fr 1.2fr",
    fontSize: "16px",
    fontWeight: 700,
    [mq[2]]: {
@@ -20,13 +20,7 @@ export const Wrapper = styled.div({
             "background2"
         `,
         gridTemplateColumns: "1fr",
-        gridTemplateRows: "0.5fr 0.5fr 1fr 1fr"
-    },
-    [mq[0]]: {
-        gridTemplateRows: "1fr 1fr 1fr 1fr"
-    },
-    [mq[1]]: {
-        gridTemplateRows: "0.3fr 0.3fr 1fr 1fr"
+        gridTemplateRows: "0.1fr 0.1fr 0.25fr 0.25fr"
     },
 })
 
@@ -123,23 +117,14 @@ export const Background2 = styled.div({
 export const Image = styled.div({
     gridRow: `background1-start / background2-end`,
     gridColumn: `background1-start / background2-end`,
-    width: "100%",
-     height: "90%",
-     position: "relative",
-   '& img': {
-       objectFit: "cover",
-       width: "60%",
-       height: "60%",
-       position: "absolute",
-       top: "50%",
-       left: "50%",
-       transform: `translate(-50%, -50%)`,
-       [mq[2]]: {
-            width: "80%",
-        },
-        [mq[0]]: {
-            top:"60%"
-        },
-        
-   }
+    width: "60%",
+    height: "50%",
+    position: "relative",
+    paddingBottom: "60%",
+    overflow: "hidden",
+    top: "15%",
+    left: "20%",
+    '& img': {
+        height: "140%",
+    }
 })

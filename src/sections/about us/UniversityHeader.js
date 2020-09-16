@@ -3,6 +3,7 @@ import React from 'react';
 import {Wrapper, LogoInner, Logo, Content, Background1, Background2, Image} from "./UniversityHeader.styles"
 
 const UniversityHeader = (props) => {
+ 
   return (
       <Wrapper>
         <LogoInner>

@@ -20,21 +20,21 @@ const UniversityList = (props) => {
             universityRefs.current.push(el)
         }
     }
+
+    
     useEffect(() => {
         const university = gsap.utils.toArray(universityRefs.current)
         university.forEach(el => {
             const section = el.querySelectorAll('div')
             const tl = gsap.timeline({
-                paused: true,
                 scrollTrigger: {
                     trigger: el,
                     start: "top 85%",
                     end: "80% center",
-                    scrub: true,
                 }
             })
-            tl.fromTo (section, {autoAlpha: 0}, {autoAlpha: 1, ease: "power3.out", stagger: {
-                from: "start", each: .1, repeat: 0
+            tl.from (section, {xPercent: "-20", autoAlpha: 0, ease: "power3.out", stagger: {
+                from: "start", each: .1
               }},0)
         })
         
@@ -46,10 +46,10 @@ const UniversityList = (props) => {
         });
     },[])
     return (
-        <Wrapper className ="wrapper">
+        <Wrapper>
             <Container>
                 <UniversitiesList>
-                    <Row className="row" ref={el => (rowRef = el)}>
+                    <Row ref={el => (rowRef = el)}>
                         {
                             universityItem.map((item, index) => {
                                 return(
